@@ -1,7 +1,7 @@
 
 function Contact(){
     return(
-        <div style={{height: '500px', backgroundColor: 'yellow'}}>
+        <div className="contact">
             <h1>Contact</h1>
         </div>
     )

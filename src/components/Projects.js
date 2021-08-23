@@ -1,7 +1,7 @@
 
 function Projects(){
     return(
-        <div style={{height: '500px', backgroundColor: 'green'}}>
+        <div className="projects">
             <h1>Projects</h1>
         </div>
     )
