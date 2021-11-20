@@ -2,8 +2,13 @@ import { Button } from "react-bootstrap";
 
 function Projects(){
     return(
-        <div className="projects">
-            <h1 className='title'>Projects</h1>
+        <div className="projects" id="projects">
+            <h1 className='title'>&lt;--- projects ---&gt;</h1>
+            <div>
+                <section>
+                    
+                </section>
+            </div>
             <div className='projectCard'>
                 <div className='projectColumns'>
                     <div className='project'>

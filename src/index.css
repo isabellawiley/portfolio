@@ -1,3 +1,8 @@
+html{
+  scroll-behavior: smooth;
+  background-color: rgb(40, 39, 46);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,23 +17,115 @@ code {
     monospace;
 }
 
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h3 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h4 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h5 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(16, 16, 19);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  /* display: inline; */
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+li a:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(107, 13, 196)
+}
+
+.page {
+  background-color: rgb(40, 39, 46);
+}
+
+.home{
+  height: 400px;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.navbar {
+  background-color: rgb(16, 16, 19);
+}
+
 .about {
+  height: 400px;
+  width: 100%;
+  /* background-color: rgb(32, 37, 114); */
+  margin: auto;
+  padding-top: 5%;
+  color: white;
+  text-align: center;
+}
+
+.skills {
   height: 500px;
   width: 100%;
-  background-color: rgb(32, 37, 114);
-  margin: auto;
+  /* background-color: rgb(32, 37, 114); */
+  /* margin: auto; */
+  padding-top: 5%;
+  text-align: center;
 }
 
 .projects {
   height: 1000px;
-  background-color: aliceblue;
-  padding-top: 2%;
+  /* background-color: aliceblue; */
+  padding-top: 5%;
+  color: white;
 }
 
 .contact {
-  height: 300px;
-  background-color: rgb(143, 144, 165);
-  padding-top: 2%;
+  height: 400px;
+  /* background-color: rgb(143, 144, 165); */
+  padding-top: 5%;
+}
+
+.initials {
+  height: 35px;
+  float: left;
+}
+
+.logo {
+  /* width: 100%; */
+  height: 60px;
+  margin: 5%;
 }
 
 .resizedCard {
@@ -64,13 +161,20 @@ code {
   margin-left: 18%;
 }
 
+.home {
+  color: white;
+  padding-top: 5%;
+  text-align: center;
+}
+
 .description {
   color: white;
-  margin-top: 8%;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .title {
   text-align: center;
+  color: rgb(107, 13, 196);
 }
 
 .projectCard {

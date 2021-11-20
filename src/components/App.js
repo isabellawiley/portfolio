@@ -1,15 +1,21 @@
 import About from "./About";
 import Contact from "./Contact";
+import Home from "./Home";
 import Navbar from "./NavBar";
 import Projects from "./Projects";
+import Skills from "./Skills";
 
 function App() {
   return (
     <div>
       <Navbar /> 
-      <About id="about" />
-      <Projects id="projects" />
-      <Contact id="contact" />
+      <div class="page">
+        <Home />
+        <About />
+        <Skills />
+        <Projects  />
+        <Contact  />
+      </div>
     </div>
   );
 }
