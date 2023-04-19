@@ -1,6 +1,11 @@
 .about {
     background-color: rgb(255, 252, 244);
     /* background-color: rgb(255, 250, 235); */
+    margin: 1rem auto;
+}
+
+.about h1, .about h2, .about h3, .about p {
+    color: rgb(45, 50, 55);
 }
 
 .about-sect-1 { 
