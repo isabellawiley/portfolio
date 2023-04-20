@@ -1,44 +1,28 @@
-import { ReactComponent as JSLogo} from "./logos/JSLogo.svg";
-import { ReactComponent as ReactLogo } from "./logos/react-logo.svg";
-import { ReactComponent as CSSLogo } from "./logos/css-logo.svg";
-import { ReactComponent as HtmlLogo } from "./logos/html-logo.svg";
-import { ReactComponent as NodejsLogo } from "./logos/nodejs-logo.svg";
-import { ReactComponent as PythonLogo } from "./logos/python-logo.svg";
-import { ReactComponent as RailsLogo } from "./logos/rails-logo.svg";
-import { ReactComponent as ReduxLogo } from "./logos/redux-logo.svg";
-import { ReactComponent as RubyLogo } from "./logos/ruby-logo.svg";
-import { ReactComponent as SqliteLogo } from "./logos/sqlite-logo.svg";
-import { ReactComponent as SwaggerLogo } from "./logos/swagger-logo.svg";
-import { ReactComponent as FlaskLogo } from "./logos/flask-logo.svg";
-import { ReactComponent as BootstrapLogo } from "./logos/bootstrap-logo.svg";
 
-function Skills(){
+function Skills({logosArr}){
+    let line1 = logosArr.slice(0,6);
+    let line2 = logosArr.slice(6, 10);
+    let line3= logosArr.slice(10);
 
     return(
         <div className="skills-sect">
             <h2>Skills</h2>
-            {/* <a href="https://cdnlogo.com/logo/javascript_18196.html"><img src="https://cdn.cdnlogo.com/logos/j/44/javascript.svg"/></a> */}
             <div className="skills-logos">
                 <div className="skills-line-1">
-                    <JSLogo />
-                    <ReactLogo />
-                    <PythonLogo />
-                    <FlaskLogo />
-                    <CSSLogo />
-                    <HtmlLogo />
+                    {line1.map((logo) => {
+                        return logo;
+                    })}
                 </div>
                 <div className="skills-line-2">
-                    <RubyLogo />
-                    <RailsLogo />
-                    <NodejsLogo />
-                    <ReduxLogo />
+                    {line2.map((logo) => {
+                        return logo;
+                    })}
                 </div>
                 <div className="skills-line-3">
-                    <BootstrapLogo />
-                    <SqliteLogo />
-                    <SwaggerLogo />
+                    {line3.map((logo) => {
+                        return logo;
+                    })}
                 </div>
-                {/* <div className="skills-line-4"></div> */}
             </div>
         </div>
     )

@@ -58,8 +58,7 @@ function Experience(){
                         <div className='job-card-back'>
                             <p>Actively created and modified code for documentation retrieval system. 
                             Handled incoming Service Desk phone or incident requests and communicated any issue impacting end users to management.
-                            </p>
-                            
+                            </p>                            
                         </div>
                     </div>
                 </div>

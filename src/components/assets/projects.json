@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "name": "Pet Portal",
+        "summary": "Create and manage all of your pets’ vet appointments.",
+        "links": [
+            {
+                "type": "Website",
+                "url": "https://pet-portal.herokuapp.com/"
+            },
+            {
+                "type": "GitHub",
+                "url": "https://github.com/isabellawiley/vet-portal"
+            }
+        ],
+        "description": "Manages user data in SQLite3 database. Utilizes custom-built complex data filtering based on multiple compounded filters for appointment scheduling. Built with Python Flask backend, ReactJS frontend and custom CSS styling.",
+        "tech": [1, 0, 3, 2, 4, 5, 12, 11]
+    },
+    {
+        "id": 2,
+        "name": "MngMe",
+        "summary": "A virtual closet application that keeps track of the user’s closets, garments, and laundry.",
+        "links": [
+            {
+                "type": "GitHub",
+                "url": "https://github.com/isabellawiley/phase-5-project"
+            }
+        ],
+        "description": "Utilizes JSON Web Tokens and localStorage to store encrypted user information client-side. Utilizes OpenWeather One Call API to get the user’s weather based on their IP Address. Suggests garments to the user based on the current local temperature. Manages garments worn by the user and sends alerts when laundry is due for wash.",
+        "tech": [1, 0, 6, 7, 9, 10, 4, 5]
+    },
+    {
+        "id": 3,
+        "name": "Marvel-Go",
+        "summary": "A web application game that allows players to collect Marvel character cards.",
+        "links": [
+            {
+                "type": "GH Frontend",
+                "url": "https://github.com/isabellawiley/phase-4-project-frontend"
+            },
+            {
+                "type": "GH Backend",
+                "url": "https://github.com/isabellawiley/phase-4-project-backend"
+            }
+        ],
+        "description": "Features user validation errors with JWT Authentication prompting existing users for correct credentials and new users for unique email. Manages total point value of each player and ranks top ten in a leaderboard. Built with Ruby on Rails backend, React frontend, and custom CSS styling.",
+        "tech": [1, 0, 6, 7, 4, 5]
+    }
+]

@@ -1,0 +1,133 @@
+
+.projects {
+    background-color: rgb(255, 252, 244);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project-card {
+    /* width: 30rem; */
+    flex-basis: 40%;
+    min-height: 340px;
+    background-color: rgb(221, 169, 124);
+    /* border-radius: 1rem; */
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    box-shadow: rgba(45, 50, 55, .2) 0 -25px 18px -14px inset,rgba(45, 50, 55, .15) 0 1px 2px,rgba(45, 50, 55, .15) 0 2px 4px,rgba(45, 50, 55, .15) 0 4px 8px,rgba(45, 50, 55, .15) 0 8px 16px,rgba(45, 50, 55, .15) 0 16px 32px;
+    color: rgb(45, 50, 55);
+    margin: 1rem;
+    padding: 1rem;
+    color: rgb(45, 50, 55);
+}
+
+.project-front, .project-back {
+    display: block;
+    transition: all 0.5s linear;
+}
+
+.hidden {
+    display: none;
+}
+
+.visually-hidden {
+    opacity: 0;
+}
+
+
+.more-info {
+    float: right;
+    font-size: x-large;
+    cursor: pointer;
+    transition: all 250ms linear;
+}
+
+.close {
+    float: right;
+    font-size: x-large;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 250ms linear;
+}
+
+.more-info:hover, .close:hover {
+    /* color: rgb(255, 252, 244); */
+    transform: scale(1.25);
+}
+
+.project-card h2, .project-card h3 {
+    text-align: center;
+}
+
+.project-stack svg{
+    height: 35px;
+    width: 35px;
+    margin: .25rem;
+}
+
+.tooltip {
+    position: relative;
+    /* border-bottom:1px dashed #000; */
+}
+
+.tooltip::before {
+    content: attr(data-text);
+    position: absolute;
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    left: 50%;
+    margin-left: -50px;
+    bottom: 200%;
+    width:70px;
+    padding:10px;
+    border-radius:10px;
+    background:rgb(45, 50, 55);
+    color: rgb(255, 252, 244);
+    text-align:center;
+    display:none;
+    z-index: 1;
+}
+
+.tooltip:hover:before {
+    display:block;
+  }
+
+.project-links {
+    display: flex;
+}
+
+.project-links a {
+    text-decoration: none;
+    /* margin: 0 1rem; */
+}
+
+.project-links button {
+  background-color: rgb(255, 252, 244);
+  border-radius: 5px;
+  box-shadow: rgba(45, 50, 55, .2) 0 -25px 18px -14px inset,rgba(45, 50, 55, .15) 0 1px 2px,rgba(45, 50, 55, .15) 0 2px 4px,rgba(45, 50, 55, .15) 0 4px 8px,rgba(45, 50, 55, .15) 0 8px 16px,rgba(45, 50, 55, .15) 0 16px 32px;
+  color: rgb(45, 50, 55);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 1rem 1rem 0 1rem;
+  font-weight: 600;
+}
+
+.project-links button:hover {
+  box-shadow: rgba(45, 50, 55,.35) 0 -25px 18px -14px inset,rgba(45, 50, 55,.25) 0 1px 2px,rgba(45, 50, 55,.25) 0 2px 4px,rgba(45, 50, 55,.25) 0 4px 8px,rgba(45, 50, 55,.25) 0 8px 16px,rgba(45, 50, 55,.25) 0 16px 32px;
+  transform: scale(1.05);
+}
