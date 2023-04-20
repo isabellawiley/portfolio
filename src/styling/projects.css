@@ -65,6 +65,11 @@
     text-align: center;
 }
 
+.project-stack {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .project-stack svg{
     height: 35px;
     width: 35px;
@@ -83,7 +88,7 @@
     /* transform: translateY(-50%); */
     left: 50%;
     margin-left: -50px;
-    bottom: 200%;
+    bottom: 100%;
     width:70px;
     padding:10px;
     border-radius:10px;
@@ -100,6 +105,7 @@
 
 .project-links {
     display: flex;
+    justify-content: center;
 }
 
 .project-links a {
@@ -130,4 +136,10 @@
 .project-links button:hover {
   box-shadow: rgba(45, 50, 55,.35) 0 -25px 18px -14px inset,rgba(45, 50, 55,.25) 0 1px 2px,rgba(45, 50, 55,.25) 0 2px 4px,rgba(45, 50, 55,.25) 0 4px 8px,rgba(45, 50, 55,.25) 0 8px 16px,rgba(45, 50, 55,.25) 0 16px 32px;
   transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+    }
 }
