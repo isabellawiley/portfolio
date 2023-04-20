@@ -6,6 +6,10 @@
     align-items: center;
 }
 
+.projects h1 {
+    color: rgb(45, 50, 55);
+}
+
 .projects-container {
     width: 90%;
     display: flex;
@@ -68,6 +72,7 @@
 .project-stack {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project-stack svg{

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import '../styling/navbar.css';
+import { ReactComponent as Paw} from './logos/paw.svg';
 
 function Navbar({}){
     const [isActive, setIsActive] = useState(false);
@@ -18,7 +19,7 @@ function Navbar({}){
                     <li><a href="#Experience">Experience</a></li>
                     <li><a href="#Projects">Projects</a></li>
                     <li><a href="#Contact">Contact</a></li>
-                    <li><a href="#Cats">Cats</a></li>
+                    <li><a href="#Cats"><Paw/></a></li>
                 </ul>
             </div>
         </nav>

@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "company": "Raccoon Labs",
+        "position": "Lead Full Stack Developer",
+        "locDate": "Remote ~ October 2022 - current",
+        "description": "Replicated existing personal Wix site with ReactJS.Optimized existing user interface designs and implemented custom components that better suited the clients needs. Utilized responsive CSS for all screen sizes.",
+        "link": "https://raccoon-labs-375607.uk.r.appspot.com/"
+    },
+    {
+        "id": 2,
+        "company": "TD Ameritrade",
+        "position": "Tech Ops Engineering Intern",
+        "locDate": "Jersey City, NJ ~ Summer 2019, Spring 2020",
+        "description": "Aided in creating a reporting system using Aqua Data Studio, Visual Studio, and Microsoft SSRS to display the privileges of users. Gained exposure to the Agile SDLC through sprint planning, backlog refinement, and daily standups."
+    },
+    {
+        "id": 3,
+        "company": "Lefrak Realty Operations Group",
+        "position": "IT Service Desk Intern",
+        "locDate": "New York, NY ~ Fall 2018",
+        "description": "Actively created and modified code for documentation retrieval system. Handled incoming Service Desk phone or incident requests and communicated any issue impacting end users to management."
+    }
+]

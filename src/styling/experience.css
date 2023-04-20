@@ -33,10 +33,10 @@
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
 }
 
-.job-card:hover .job-card-inner {
+.job-card.is-flipped .job-card-inner {
     transform: rotateY(180deg);
 }
 
@@ -53,7 +53,8 @@
     align-items: center;
     padding: 1rem;
     box-sizing: border-box;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
+    box-shadow: rgba(45, 50, 55,.35) 0 -25px 18px -14px inset,rgba(45, 50, 55,.25) 0 1px 2px,rgba(45, 50, 55,.25) 0 2px 4px,rgba(45, 50, 55,.25) 0 4px 8px,rgba(45, 50, 55,.25) 0 8px 16px,rgba(45, 50, 55,.25) 0 16px 32px;
 }
 
 .job-card-front {
@@ -63,6 +64,26 @@
 .job-card-back {
     color: rgb(255, 252, 244);
     transform: rotateY(180deg);
+}
+
+.more-info {
+    float: right;
+    font-size: x-large;
+    cursor: pointer;
+    transition: all 250ms linear;
+}
+
+.close {
+    float: right;
+    font-size: x-large;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 250ms linear;
+}
+
+.more-info:hover, .close:hover {
+    /* color: rgb(255, 252, 244); */
+    transform: scale(1.25);
 }
 
 .job-card-header {
@@ -82,4 +103,16 @@
 
 .job-card a {
     color: rgb(255, 252, 244);
+}
+
+@media screen and (max-width: 768px) {
+    .jobs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .job-card{
+        width: 80%;
+        margin: 1rem 0;
+    }
 }

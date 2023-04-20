@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard';
 
 function Projects({logosArr}){
     return(
-        <div className='projects'>
+        <div id='Projects' className='projects'>
             <h1>Projects</h1>
             <div className="projects-container">
                 {allProjects.map((project) => {

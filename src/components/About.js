@@ -5,7 +5,7 @@ import Skills from './Skills';
 function About({logosArr}){
 
     return(
-        <div className='about'>
+        <div id='About' className='about'>
             <div className="about-sect-1">
                 <div className='headshot'>
                     <img src='/images/edited_headshot.jpg' alt='headshot'/>
