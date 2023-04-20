@@ -16,6 +16,7 @@ import { ReactComponent as SwaggerLogo } from "./logos/swagger-logo.svg";
 import { ReactComponent as FlaskLogo } from "./logos/flask-logo.svg";
 import { ReactComponent as BootstrapLogo } from "./logos/bootstrap-logo.svg";
 import Cats from "./Cats";
+import Footer from "./Footer";
 // import Contact from "./Contact";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Projects logosArr={logosArr}/>
       {/* <Contact /> */}
       <Cats />
+      <Footer/>
     </div>
   );
 }

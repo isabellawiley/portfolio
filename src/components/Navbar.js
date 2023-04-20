@@ -2,12 +2,12 @@ import { useState } from "react";
 import '../styling/navbar.css';
 import { ReactComponent as Paw} from './logos/paw.svg';
 
-function Navbar({}){
+function Navbar(){
     const [isActive, setIsActive] = useState(false);
 
     return(
         <nav className="navigation">
-            <div className="logo"><a href='#'>isabella</a></div>
+            <div className="logo">isabella</div>
             <div className={isActive ? 'change' : 'menu'} onClick={() => setIsActive(!isActive)}>
                 <div className="bar1"></div>
                 <div className="bar2"></div>
