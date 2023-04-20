@@ -10,12 +10,18 @@ function Experience(){
 
     return(
         <div id='Experience' className="experience">
+            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+                <path d="M0 0 L50 100 L100 0 Z" fill="#FFFCF4" stroke="#FFFCF4"></path>
+            </svg>
             <h1>Experience</h1>
             <div className='jobs-container'>
                 {jobs.map((job) => {
                     return(<JobCard key={job.id} job={job} jobLogos={jobLogos}/>)
                 })}
             </div>
+            <svg preserveAspectRatio="none" viewBox="0 -2 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+                <path d="M0 100 L50 0 L100 100 Z" fill="#FFFCF4" stroke="#FFFCF4"></path>
+            </svg>
         </div>
     )
 }
