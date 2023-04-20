@@ -15,6 +15,8 @@ import { ReactComponent as SqliteLogo } from "./logos/sqlite-logo.svg";
 import { ReactComponent as SwaggerLogo } from "./logos/swagger-logo.svg";
 import { ReactComponent as FlaskLogo } from "./logos/flask-logo.svg";
 import { ReactComponent as BootstrapLogo } from "./logos/bootstrap-logo.svg";
+import Cats from "./Cats";
+// import Contact from "./Contact";
 
 function App() {
   let logosArr = [<JSLogo/>, <ReactLogo/>, <PythonLogo/>, <FlaskLogo/>, <CSSLogo/>, <HtmlLogo/>, <RubyLogo />, <RailsLogo/>, <NodejsLogo/>, <ReduxLogo/>, <BootstrapLogo/>, <SqliteLogo/>, <SwaggerLogo/>];
@@ -25,7 +27,8 @@ function App() {
       <About logosArr={logosArr}/>
       <Experience />
       <Projects logosArr={logosArr}/>
-      <h1>HELLO WORLD!</h1>
+      {/* <Contact /> */}
+      <Cats />
     </div>
   );
 }

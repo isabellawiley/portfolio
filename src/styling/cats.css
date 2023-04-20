@@ -1,0 +1,97 @@
+
+.cats-section {
+    background-color: rgb(221, 169, 124);
+    padding: 2rem;
+    /* margin-top: 2rem; */
+}
+
+.cats-section h1, h2, p {
+    /* color: rgb(45, 50, 55); */
+    text-align: center;
+    color: rgb(255, 252, 244);
+}
+
+.cats-section p {
+    font-size: 18px;
+    /* font-weight: 500; */
+}
+
+.cats-header {
+    width: 70%;
+    margin: auto;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.cats-header.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.cats-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#tom-front {
+    background-image: url('../cat-images/tom-handsome.jpg');
+}
+
+#tom-back {
+    background-image: url('../cat-images/tom-funny.jpg');
+}
+
+#thor-front {
+    background-image: url('../cat-images/thor-handsome.jpg');
+}
+
+#thor-back {
+    background-image: url('../cat-images/thor-funny.jpg');
+}
+
+.cat-card {
+    height: 312.5px;
+    width: 250px;
+    background-color: transparent;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.cat-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.cat-card.is-flipped .cat-card-inner {
+    transform: rotateX(180deg);
+}
+
+.cat-card div {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.cat-card-front, .cat-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.cat-card-back {
+    transform: rotateX(180deg);
+}
+
+@media screen and (max-width: 768px) {
+    .cats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
