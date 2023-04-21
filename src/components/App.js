@@ -25,12 +25,14 @@ function App() {
   return (
     <div>
       <Navbar />
-      <About logosArr={logosArr}/>
-      <Experience />
-      <Projects logosArr={logosArr}/>
-      {/* <Contact /> */}
-      <Cats />
-      <Footer/>
+      <div className="content">
+        <About logosArr={logosArr}/>
+        <Experience />
+        <Projects logosArr={logosArr}/>
+        {/* <Contact /> */}
+        <Cats />
+        <Footer/>
+      </div>
     </div>
   );
 }
