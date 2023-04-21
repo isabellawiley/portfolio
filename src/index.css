@@ -8,6 +8,10 @@ body {
   background-color: rgb(255, 252, 244);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .fixed-pos {
   height: 100%;
   overflow: hidden;

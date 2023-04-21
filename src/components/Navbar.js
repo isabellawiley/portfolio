@@ -16,6 +16,12 @@ function Navbar(){
         }
     }
 
+    function handleMenuClick(){
+        setIsActive(!isActive);
+        let body = document.querySelector('body');
+        body.classList.remove('fixed-pos')
+    }
+
     return(
         <nav className="navigation">
             <div className="logo">isabella</div>
@@ -26,11 +32,11 @@ function Navbar(){
             </div>
             <div className={isActive ? 'navbar expanded' : 'navbar'}>
                 <ul>
-                    <li><a href="#About" onClick={() => handleClick()}>About</a></li>
-                    <li><a href="#Experience" onClick={() => handleClick()}>Experience</a></li>
-                    <li><a href="#Projects" onClick={() => handleClick()}>Projects</a></li>
+                    <li><a href="#About" onClick={() => handleMenuClick()}>About</a></li>
+                    <li><a href="#Experience" onClick={() => handleMenuClick()}>Experience</a></li>
+                    <li><a href="#Projects" onClick={() => handleMenuClick()}>Projects</a></li>
                     {/* <li><a href="#Contact">Contact</a></li> */}
-                    <li><a href="#Cats" onClick={() => handleClick()}><Paw/></a></li>
+                    <li><a href="#Cats" onClick={() => handleMenuClick()}><Paw/></a></li>
                 </ul>
             </div>
         </nav>
