@@ -38,6 +38,11 @@
     transition: all 0.5s linear;
 }
 
+.project-front-content, .project-back-content {
+    display: flex;
+    flex-direction: column;
+}
+
 .hidden {
     display: none;
 }
@@ -48,18 +53,21 @@
 
 
 .more-info {
-    float: right;
+    /* float: right; */
     font-size: x-large;
     cursor: pointer;
     transition: all 250ms linear;
+    align-self: flex-end;
 }
 
 .close {
-    float: right;
-    font-size: x-large;
+    /* float: right; */
+    font-size: xx-large;
     font-weight: 700;
     cursor: pointer;
     transition: all 250ms linear;
+    align-self: flex-end;
+    height: 10%;
 }
 
 .more-info:hover, .close:hover {
@@ -83,12 +91,12 @@
     margin: .25rem;
 }
 
-.tooltip {
+.project-tooltip {
     position: relative;
     /* border-bottom:1px dashed #000; */
 }
 
-.tooltip::before {
+.project-tooltip::before {
     content: attr(data-text);
     position: absolute;
     /* top: 50%; */
@@ -106,7 +114,7 @@
     z-index: 1;
 }
 
-.tooltip:hover:before {
+.project-tooltip:hover:before {
     display:block;
   }
 

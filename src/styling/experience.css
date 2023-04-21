@@ -67,22 +67,27 @@
     transform: rotateY(180deg);
 }
 
-.more-info {
-    float: right;
+.job-more-info {
+    /* float: right; */
     font-size: x-large;
     cursor: pointer;
     transition: all 250ms linear;
+    position: absolute;
+    top: 3%;
+    right: 1%;
 }
 
-.close {
-    float: right;
-    font-size: x-large;
-    font-weight: 700;
+.job-close {
+    font-weight: 400;
+    font-size: xx-large;
+    top: 1%;
+    right: 3%;
     cursor: pointer;
     transition: all 250ms linear;
+    position: absolute;
 }
 
-.more-info:hover, .close:hover {
+.job-more-info:hover, .job-close:hover {
     /* color: rgb(255, 252, 244); */
     transform: scale(1.25);
 }

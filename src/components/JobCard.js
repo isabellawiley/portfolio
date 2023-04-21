@@ -18,13 +18,13 @@ function JobCard({job, jobLogos}){
                         <a href={link} target='_blank' rel="noreferrer"><h2>{company}</h2></a>
                         :
                         <h2>{company}</h2>}
-                        <span className='more-info' onClick={() => flip()}>&#10247;</span>
+                        <span className='job-more-info' onClick={() => flip()}>&#10247;</span>
                     </div>
                     <h3>{position}</h3>
                     <p>{locDate}</p>
                 </div>
                 <div className='job-card-back'>
-                    <span className='close' onClick={() => flip()}>&times;</span>
+                    <span className='job-close' onClick={() => flip()}>&times;</span>
                     <p>{description}</p>
                 </div>
             </div>
