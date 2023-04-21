@@ -9,18 +9,21 @@ function Footer(){
 
     return(
         <div className='footer'>
-            <a href="mailto:isabellasbwiley@gmail.com" title='Email'>
-                <span className='tooltip' data-text='Email'><EmailIcon/></span>
-            </a>
-            <a href='https://www.linkedin.com/in/isabella-wiley/' target='_blank' rel="noreferrer">
-                <span className='tooltip' data-text='LinkedIn'><LinkedInIcon/></span>
-            </a>
-            <a href='https://github.com/isabellawiley' target='_blank' rel="noreferrer">
-                <span className='tooltip' data-text='GitHub'><GitHubIcon/></span>
-            </a>
-            <a href={resume} download target="_blank" rel="noreferrer">
-                <span className='tooltip' data-text='Resume'><DownloadIcon/></span>
-            </a>
+            <h2>Let's work together!</h2>
+            <div className='footer-links'>
+                <a href="mailto:isabellasbwiley@gmail.com" title='Email'>
+                    <span className='tooltip' data-text='Email'><EmailIcon/></span>
+                </a>
+                <a href='https://www.linkedin.com/in/isabella-wiley/' target='_blank' rel="noreferrer">
+                    <span className='tooltip' data-text='LinkedIn'><LinkedInIcon/></span>
+                </a>
+                <a href='https://github.com/isabellawiley' target='_blank' rel="noreferrer">
+                    <span className='tooltip' data-text='GitHub'><GitHubIcon/></span>
+                </a>
+                <a href={resume} download target="_blank" rel="noreferrer">
+                    <span className='tooltip' data-text='Resume'><DownloadIcon/></span>
+                </a>
+            </div>
             {/* <form action="mailto:wileyisabella@gmail.com" method="get" enctype="text/plain">
                 Subject:<br/>
                 <input type="text" name="subject" placeholder="Your Name"/><br/>
