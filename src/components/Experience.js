@@ -10,7 +10,7 @@ function Experience(){
 
     return(
         <div id='Experience' className="experience section">
-            <svg preserveAspectRatio="none" viewBox="0 1 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+            <svg preserveAspectRatio="none" viewBox="0 1 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light down">
                 <path d="M0 0 L50 100 L100 0 Z" fill="#FFFCF4" stroke="#FFFCF4"></path>
             </svg>
             <h1>Experience</h1>
@@ -19,7 +19,7 @@ function Experience(){
                     return(<JobCard key={job.id} job={job} jobLogos={jobLogos}/>)
                 })}
             </div>
-            <svg preserveAspectRatio="none" viewBox="0 -2 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+            <svg preserveAspectRatio="none" viewBox="0 -2 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light up">
                 <path d="M0 100 L50 0 L100 100 Z" fill="#FFFCF4" stroke="#FFFCF4"></path>
             </svg>
         </div>

@@ -27,6 +27,16 @@ code {
   top: 0;
 }
 
+@supports (-webkit-touch-callout: none) {
+  .svgcolor-light.down {
+    transform: translateY(0px);
+  }
+  
+  .svgcolor-light.up {
+    transform: translateY(1px);
+  }
+}
+
 .content {
   margin-top: 80px;
 }
