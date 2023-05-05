@@ -43,9 +43,13 @@ function ProjectCard({proj, logosArr}){
                     </div>
                     <div className="project-links">
                         {links.map((link) => {
-                            return <a key={link.url} href={link.url} target='_blank' rel="noreferrer"><button>{link.type}</button></a>
+                            return <a className="card-btn" key={link.url} href={link.url} target='_blank' rel="noreferrer">{link.type}</a>
                         })}
                     </div>
+                     {/* READ MORE BUTTON  */}
+                    {/* <span className="info-btn" onClick={() => fade(1)}>Read More<svg className="info-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+        </svg></span> */}
                 </div>
             </div>
             <div className='project-back visually-hidden hidden' id={`back${id}`}>
