@@ -10,14 +10,75 @@
     color: rgb(255, 252, 244);
 }
 
-/* .footer-links {
-
-} */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 .footer svg {
     margin: 0 .75rem;
     height: 40px;
     width: 40px;
+}
+
+.ft {
+    display: flex;
+    gap: 2vw;
+}
+
+.ctForm {
+    display: flex;
+    flex-direction: column;
+    /* margin: auto 1vw; */
+}
+
+.ctForm input, textarea {
+    background-color: rgb(255, 252, 244);
+    border: none;
+    padding: 1vh;
+    margin-top: .5vh;
+}
+
+.ctForm label:not(:first-child) {
+    margin-top: 1vh;
+}
+
+.ctForm button {
+    background-color: transparent;
+    border: 3px solid var(--twhite);
+    color: var(--twhite);
+    border-radius: .5rem;
+    font-weight: 600;
+    margin: 1rem 1rem 0 1rem;
+    overflow: hidden;
+    padding: .7rem .75rem;
+    position: relative;
+    transition: all .3s ease;
+    z-index: 10;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ctForm button::before {
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scaleY(0);
+    transition: .3s all ease;
+    width: 100%;
+    z-index: -1;
+    background-color: var(--thorange);
+}
+
+.ctForm button:hover {
+    color: var(--tlack);
+    cursor: pointer;
+}
+
+.ctForm button:hover::before {
+    transform: scaleY(1);
 }
 
 .tooltip {
@@ -44,4 +105,15 @@
 
 .tooltip:hover:before {
     display:block;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .ft {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: row;
+    }
   }

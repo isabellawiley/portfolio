@@ -3,26 +3,30 @@ import { ReactComponent as LinkedInIcon } from './logos/linkedin-icon.svg';
 import { ReactComponent as GitHubIcon } from './logos/github-icon-1.svg';
 import { ReactComponent as DownloadIcon } from './logos/download-icon.svg';
 import '../styling/footer.css';
-import resume from './assets/Isabella_Wiley_resume.pdf'
+import resume from './assets/IsabellaWiley-SE-resume.pdf'
+import ContactForm from './ContactForm';
 
 function Footer(){
 
     return(
         <div className='footer'>
             <h2>Let's work together!</h2>
-            <div className='footer-links'>
-                <a href="mailto:isabellasbwiley@gmail.com" title='Email'>
-                    <span className='tooltip' data-text='Email'><EmailIcon/></span>
-                </a>
-                <a href='https://www.linkedin.com/in/isabella-wiley/' target='_blank' rel="noreferrer">
-                    <span className='tooltip' data-text='LinkedIn'><LinkedInIcon/></span>
-                </a>
-                <a href='https://github.com/isabellawiley' target='_blank' rel="noreferrer">
-                    <span className='tooltip' data-text='GitHub'><GitHubIcon/></span>
-                </a>
-                <a href={resume} download target="_blank" rel="noreferrer">
-                    <span className='tooltip' data-text='Resume'><DownloadIcon/></span>
-                </a>
+            <div className='ft'>
+                <div className='footer-links'>
+                    <a href="mailto:isabellasbwiley@gmail.com" title='Email'>
+                        <span className='tooltip' data-text='Email'><EmailIcon/></span>
+                    </a>
+                    <a href='https://www.linkedin.com/in/isabella-wiley/' target='_blank' rel="noreferrer">
+                        <span className='tooltip' data-text='LinkedIn'><LinkedInIcon/></span>
+                    </a>
+                    <a href='https://github.com/isabellawiley' target='_blank' rel="noreferrer">
+                        <span className='tooltip' data-text='GitHub'><GitHubIcon/></span>
+                    </a>
+                    <a href={resume} download target="_blank" rel="noreferrer">
+                        <span className='tooltip' data-text='Resume'><DownloadIcon/></span>
+                    </a>
+                </div>
+                <ContactForm />
             </div>
             {/* <form action="mailto:wileyisabella@gmail.com" method="get" enctype="text/plain">
                 Subject:<br/>
