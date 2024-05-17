@@ -17,13 +17,18 @@
     justify-content: space-around;
     width: 100%;
     margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .job-card {
     background-color: transparent;
     width: 25%;
+    min-width: 20rem;
+    max-width: 23rem;
     height: 20rem;
     perspective: 1000px;
+    margin: 1rem auto;
 }
 
 .job-card-inner {
@@ -95,7 +100,11 @@
 .job-card-header {
     display: flex;
     align-items: center;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
 }
+/*svg width 70% h 15mm */
 
 .job-card-header img {
     width: 3rem;
@@ -104,7 +113,7 @@
 
 .job-card-header h2 {
     text-align: center;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
 }
 
 .job-card a {

@@ -1,21 +1,24 @@
+// import {ReactComponent as ExtLink} from './logos/external-link-icon.svg';
+import {ReactComponent as ExtLink} from './logos/icons8-external-link.svg';
 
-function JobCard({job, jobLogos}){
+function JobCard({job, jobLogos, logo}){
     const {id, company, position, locDate, description, link} = job;
 
     function flip(){
         let card = document.querySelector(`#job${id}`);
         card.classList.toggle('is-flipped');
     }
+    console.log(typeof(logo) === "string")
 
     return(
         <div className="job-card" id={`job${id}`}>
             <div className='job-card-inner'>
                 <div className='job-card-front'>
                     <div className='job-card-header'>
-                        {id-1===1 ? jobLogos[id-1] : 
-                        <img src={jobLogos[id-1]} alt={company} />}
+                        {typeof(logo) === "object" ? logo : 
+                        <img src={logo} alt={company} />}
                         {link ? 
-                        <a href={link} target='_blank' rel="noreferrer"><h2>{company}</h2></a>
+                        <a href={link} target='_blank' rel="noreferrer"><h2>{company}{<ExtLink/>}</h2></a>
                         :
                         <h2>{company}</h2>}
                         <span className='job-more-info' onClick={() => flip()}>&#10247;</span>

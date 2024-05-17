@@ -3,7 +3,7 @@ import { ReactComponent as LinkedInIcon } from './logos/linkedin-icon.svg';
 import { ReactComponent as GitHubIcon } from './logos/github-icon-1.svg';
 import { ReactComponent as DownloadIcon } from './logos/download-icon.svg';
 import '../styling/footer.css';
-import resume from './assets/IsabellaWiley-SE-resume.pdf'
+import resume from './assets/5-15-24mi-resume.pdf';
 import ContactForm from './ContactForm';
 
 function Footer(){

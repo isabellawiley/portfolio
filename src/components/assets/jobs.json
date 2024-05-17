@@ -1,21 +1,29 @@
 [
     {
         "id": 1,
-        "company": "Raccoon Labs",
+        "company": "Basstown Productions",
         "position": "Lead Full Stack Developer",
-        "locDate": "Remote ~ October 2022 - current",
-        "description": "Replicated existing personal Wix site with ReactJS.Optimized existing user interface designs and implemented custom components that better suited the clients needs. Utilized responsive CSS for all screen sizes.",
-        "link": "https://raccoon-labs-375607.uk.r.appspot.com/"
+        "locDate": "Remote ~ January 2024 - current",
+        "description": "Developed a ReactJS personal business website to showcase client's services and past work in music production. Created a custom logo with Inkscape and mock up website with Figma before development. Arranged meetings monthly with client to track progress and make updates fitting with the client's needs.",
+        "link": "https://basstown.uc.r.appspot.com/"
     },
     {
         "id": 2,
+        "company": "Raccoon Labs",
+        "position": "Lead Full Stack Developer",
+        "locDate": "Remote ~ October 2022 - February 2023",
+        "description": "Replicated existing personal Wix site with ReactJS. Optimized existing user interface designs and implemented custom components that better suited the clients needs. Utilized responsive CSS for all screen sizes.",
+        "link": "https://raccoon-labs-375607.uk.r.appspot.com/"
+    },
+    {
+        "id": 3,
         "company": "TD Ameritrade",
         "position": "Tech Ops Engineering Intern",
         "locDate": "Jersey City, NJ ~ Summer 2019, Spring 2020",
         "description": "Aided in creating a reporting system using Aqua Data Studio, Visual Studio, and Microsoft SSRS to display the privileges of users. Gained exposure to the Agile SDLC through sprint planning, backlog refinement, and daily standups."
     },
     {
-        "id": 3,
+        "id": 4,
         "company": "Lefrak Realty Operations Group",
         "position": "IT Service Desk Intern",
         "locDate": "New York, NY ~ Fall 2018",
