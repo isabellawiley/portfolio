@@ -1,6 +1,7 @@
 import '../styling/about.css';
 import Education from './Education';
 import Skills from './Skills';
+import headshot from '../cat-images/edited_headshot.jpg';
 
 function About({logosArr}){
 
@@ -29,7 +30,7 @@ function About({logosArr}){
         <div id='About' className='about section'>
             <div className="about-sect-1">
                 <div className='headshot'>
-                    <img src='/images/edited_headshot.jpg' alt='headshot'/>
+                    <img src={headshot} alt='headshot'/>
                 </div>
                 <div className='blurb'>
                     <h1>Hi there! I'm Isabella.</h1>
