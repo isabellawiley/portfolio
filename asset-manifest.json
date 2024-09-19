@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.10dfaedc.css",
-    "main.js": "/portfolio/static/js/main.67bf5161.js",
+    "main.js": "/portfolio/static/js/main.87c52b7f.js",
     "static/media/tom-handsome.jpg": "/portfolio/static/media/tom-handsome.c2cb967b0eef0e1311ba.jpg",
     "static/media/thor-handsome.jpg": "/portfolio/static/media/thor-handsome.632a8a4116d6e41622c2.jpg",
     "static/media/tom-funny.jpg": "/portfolio/static/media/tom-funny.637150c88debbef0ef34.jpg",
     "static/media/thor-funny.jpg": "/portfolio/static/media/thor-funny.511feb2aa4216d11cd19.jpg",
     "static/media/basstown-logo-red.svg": "/portfolio/static/media/basstown-logo-red.ef82f0a4426cfb1f399fc9dd14db835d.svg",
     "static/media/5-15-24mi-resume.pdf": "/portfolio/static/media/5-15-24mi-resume.a960496c1e383ac05fd5.pdf",
+    "static/media/edited_headshot.jpg": "/portfolio/static/media/edited_headshot.84ac1e05944fb434f581.jpg",
     "static/media/raccoon-labs-logo.jpg": "/portfolio/static/media/raccoon-labs-logo.54246f62f1d51360f7a1.jpg",
     "static/media/flask-logo.svg": "/portfolio/static/media/flask-logo.5e892a547c6ee5997f68b07c27dccdd8.svg",
     "static/media/paw.svg": "/portfolio/static/media/paw.2491931ac3dadec19cf8a039a644cbea.svg",
@@ -31,10 +32,10 @@
     "static/media/html-logo.svg": "/portfolio/static/media/html-logo.a5a66ba302a0decb135b8495d602edb6.svg",
     "static/media/tda-logo.svg": "/portfolio/static/media/tda-logo.80e7029a39e9374f4e724204e57913ab.svg",
     "main.10dfaedc.css.map": "/portfolio/static/css/main.10dfaedc.css.map",
-    "main.67bf5161.js.map": "/portfolio/static/js/main.67bf5161.js.map"
+    "main.87c52b7f.js.map": "/portfolio/static/js/main.87c52b7f.js.map"
   },
   "entrypoints": [
     "static/css/main.10dfaedc.css",
-    "static/js/main.67bf5161.js"
+    "static/js/main.87c52b7f.js"
   ]
 }
